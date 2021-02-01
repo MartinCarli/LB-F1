@@ -1,3 +1,5 @@
+#prima c`era un errore nel confronto, avevo dei problemi con il self e l a ----non serve mettere due variabili nell graffe----
+
 #Creo una classe automobile
 class Automobile():
 
@@ -23,33 +25,33 @@ class Automobile():
     #(eccetto per la targa che `e univoca!).
 
     #confronto se le auto hanno caratteristiche uguali
-    def confronta(self,c, a):#a corrisponde ad automobile2
+    def confronta(self, a ):#a corrisponde ad automobile2
         #casa_auto
-        if (c.casa_auto==a.casa_auto):
+        if (self.casa_auto==a.casa_auto):
             print('= casa')
         else:
             print('!= casa')
         print('.................................................')
         #modello
-        if (c.modello==a.modello):
+        if (self.modello==a.modello):
             print('= modello')
         else:
             print('!= modello')
         print('.................................................')
         #numero_posti
-        if(c.numero_posti==a.numero_posti):
+        if(self.numero_posti==a.numero_posti):
             print('= numero di posti')
         else:
             print('!= numero di posti')
         print('.................................................')
         #numero_portiere
-        if(c.numero_portiere==a.numero_portiere):
+        if(self.numero_portiere==a.numero_portiere):
             print('= numero portiere')
         else:
             print('!= numero portiere')
         print('.................................................')
         #kw
-        if (c.kw==a.kw):
+        if (self.kw==a.kw):
             print('= kw')
         else:
             print('!= kw')
@@ -87,10 +89,10 @@ automobile1.parla()
 print('\t')
 
 print('CONFR. AUTOMOBILE1 CON AUTOMOBILE2')
-print(confronta(automabile1,automobile2))
+print(automobile1.confronta(automobile2))
 print('\t')
 print('CONFR. AUTOMOBILE2 CON AUTOMOBILE3')
-print(confronta(automobile1,automobile3))
+print(automobile2.confronta(automobile3))
 print('\t')
 
 print(automobile1.bollo('Euro0'))
