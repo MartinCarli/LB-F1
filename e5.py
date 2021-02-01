@@ -1,3 +1,6 @@
+#c e qualche problema con l ultima parte, RICONTROLLA #
+
+
 #Creo una classe automobile
 class Automobile:
 
@@ -117,3 +120,4 @@ class Trasformers(Automobile):
     trasformers2=Trasformers(nome='Trasformers', generazione='2', grado='sergente', fazione='Decepticon', reparto='atiglieria leggera')
 
     Trasformers.parla(trasformers1, trasformers2)
+
