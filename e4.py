@@ -87,10 +87,10 @@ automobile1.parla()
 print('\t')
 
 print('CONFR. AUTOMOBILE1 CON AUTOMOBILE2')
-print(automobile1.confronta(automobile2))
+print(confronta(automabile1,automobile2))
 print('\t')
 print('CONFR. AUTOMOBILE2 CON AUTOMOBILE3')
-print(automobile2.confronta(automobile3))
+print(confronta(automobile1,automobile3))
 print('\t')
 
 print(automobile1.bollo('Euro0'))
